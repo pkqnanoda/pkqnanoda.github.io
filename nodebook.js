@@ -12,3 +12,10 @@ window.onload = function() {
     noteText.value = savedNote;
   }
 };
+
+const playSoundButton = document.getElementById("play-sound-button");
+
+playSoundButton.addEventListener("click", function() {
+  const audio = new Audio("爆発1.mp3");
+  audio.play();
+});
